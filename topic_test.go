@@ -1,7 +1,7 @@
 package topic_test
 
 import (
-	"github.com/tv42/topic"
+	"github.com/Dieterbe/topic"
 	"runtime"
 	"testing"
 )

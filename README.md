@@ -1,11 +1,10 @@
 Go library for in-process single-topic pub-sub
 ==============================================
 
-This library is especially aimed at situations where consumers may
-disappear at any time.
+behaves like tv42/topic, except doesn't kick out slow consumers.
 
 Use the Go import path
 
-    github.com/tv42/topic
+    github.com/Dieterbe/topic
 
 Documentation at http://godoc.org/github.com/tv42/topic

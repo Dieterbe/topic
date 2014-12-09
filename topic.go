@@ -43,12 +43,7 @@ func (t *Topic) run(broadcast <-chan interface{}) {
 			t.lock.Lock()
 			defer t.lock.Unlock()
 			for ch, _ := range t.connections {
-				select {
-				case ch <- msg:
-				default:
-					delete(t.connections, ch)
-					close(ch)
-				}
+				ch <- msg
 			}
 		}()
 	}
